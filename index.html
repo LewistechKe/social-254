@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social 254  - Social Media Website Using HTML, CSS & Javascript </title>
+    <title>Social254  - Social Media Website Using HTML, CSS & Javascript </title>
     <!--    ICONSCOUT CDN  -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> 
     <!--  STYLESHEET  -->
@@ -14,7 +14,7 @@
     <nav>
         <div class="container">
             <h2 class="log">
-                Social 254
+                Social254
             </h2>
             <div class="search-bar">
                 <i class="uil uil-search"></i>
@@ -54,8 +54,8 @@
                     <a class="menu-item">
                         <span><i class="uil uil-compass"></i></span>  <h3>Explore</h3>
                     </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-bell"></i></span>  <h3>Notifications</h3>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span>  <h3>Notifications</h3>
                         <!----------------------  NOTIFICATION POPUP ----------------->
                         <div class="notifications-popup">
                             <div>
@@ -112,10 +112,11 @@
                                     <small class="text-muted">1 HOUR AGO</small>
                                 </div>
                             </div>
-                        </div>
+                        </div>                       
                     </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-envelope-alt"></i></span>  <h3>Messages</h3>
+                    <!------------------ END NOTIFICATION POPUP---------------->
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span>  <h3>Messages</h3>
                     </a>
                     <a class="menu-item">
                         <span><i class="uil uil-bookmark"></i></span>  <h3>Bookmarks</h3>
@@ -129,16 +130,69 @@
                     <a class="menu-item">
                         <span><i class="uil uil-setting"></i></span>  <h3>Settings</h3>
                     </a>
-
                 </div>
+                <!-------------------------   END OF SIDEBAR   ----------------->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
             </div>
+            <!-----------------------------    END OF LEFT   -------------------------->
+
+
+
             <!--==================  MIDDLE   ====================-->
             <div class="middle">
+                <!-----------------------  STORIES   -------------------->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-8.jpg">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-9.jpg">
+                        </div>
+                        <p class="name">Lilla James</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-10.jpg">
+                        </div>
+                        <p class="name">Winnie Hale</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-11.jpg">
+                        </div>
+                        <p class="name">Daniel Bale</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-12.jpg">
+                        </div>
+                        <p class="name">Jane Doe</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-13.jpg">
+                        </div>
+                        <p class="name">Tina White</p>
+                    </div>
+                </div>
+                <!---------------------  END OF STORIES   -------------->
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Diana?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
 
             </div>
+
+
             <!--==================  RIGHT  =====================-->
             <div class="right">
-
             </div>
         </div>
     </main>
