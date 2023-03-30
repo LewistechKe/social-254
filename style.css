@@ -37,7 +37,7 @@ body{
     font-family: 'Poppins', sans-serif;
     color: var(--color-dark);
     background: var(--color-light);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* GENERAL STYLES */
@@ -528,7 +528,7 @@ main .container .left .profile {
     background: rgba(255, 255, 255, 0.5);
     width: 100vw;
     height: 100vh;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
@@ -536,6 +536,7 @@ main .container .left .profile {
     display: grid;
     place-items: center;
     font-size: 0.9rem;
+    display: none;
 }
 
 .customize-theme .card {
@@ -543,9 +544,10 @@ main .container .left .profile {
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
-/*-----------------------  FONT SIZE -------------------*/
+/*-----------------------  FONT SIZES -------------------*/
 .customize-theme .font-size {
     margin-top: 5rem;
 }
@@ -581,7 +583,7 @@ main .container .left .profile {
     background: var(--color-primary);
 }
 
-/*---------------------------  FONT SIZE  --------------------------*/
+/*---------------------------  FONT SIZES  --------------------------*/
 .customize-theme .color{
     margin-top: 2rem;
 }
@@ -698,6 +700,10 @@ main .container .left .profile {
  .left .btn {
     display: none;
  }
+
+ .customize-theme .card{
+    width: 80vw;
+ }
 }
 
 /* =====================   MEDIA QUERIES FOR SMALL TABLETS AND MOBILE PHONES ====================*/
@@ -739,5 +745,9 @@ main .container .left .profile {
 
     main .container .right {
         display: none;
+    }
+
+    .customize-theme .card{
+        width: 92vw;
     }
 }
